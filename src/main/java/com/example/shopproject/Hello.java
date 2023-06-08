@@ -1,4 +1,4 @@
-package com.example.shopproject.domain;
+package com.example.shopproject;
 
 import lombok.Data;
 
