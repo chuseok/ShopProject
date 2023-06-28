@@ -3,14 +3,17 @@ package com.example.shopproject.repository;
 import com.example.shopproject.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Repository
+@RequiredArgsConstructor
 public class MemberRepository {
-    @PersistenceContext //injection = 주입
-    private EntityManager em;
+    private final EntityManager em;
+
     public Long save(Member member) {
         em.persist(member);
         return member.getId();
