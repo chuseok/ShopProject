@@ -12,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
@@ -43,7 +45,17 @@ public class OrderService {
         return order.getId();
     }
 
-    //취소
+    /**
+     * 주문 취소
+     */
+    @Transactional
+    public void cancelOrder(Long orderId) {
+        Order order = orderRepository.findOne(orderId);
+        order.cancel();
+    }
 
     //검색
+//    public List<Order> findOrders(OrderSearch orderSearch) {
+//         return orderRepository.findAll(orderSearch);
+//    }
 }
