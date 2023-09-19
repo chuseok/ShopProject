@@ -60,6 +60,8 @@ public class OrderServiceTest {
         orderService.order(member.getId(), item.getId(), orderCount);
 
         //then
+        //이 line으로 넘어오면 안됨
+        //넘어오면 message 표시
         fail("재고 수량 부족 예외가 발생해야 한다.");
 
     }
