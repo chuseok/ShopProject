@@ -7,11 +7,11 @@
 #
 #  jpa:
 #    hibernate:
-#      ddl-auto: create
 #    properties:
+#      ddl-auto: create
 #      hibernate:
 #        # show_sql: true
-#        format_sql: true
+bb#        format_sql: true
 logging.level:
   org.hibernate.SQL: debug
   org.hibernate.type: trace
