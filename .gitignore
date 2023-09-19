@@ -2309,3 +2309,5 @@ wrapper/dists/gradle-7.6.1-bin/2clxi94ab3brv6467628wnxmd/gradle-7.6.1/lib/plugin
 wrapper/dists/gradle-7.6.1-bin/2clxi94ab3brv6467628wnxmd/gradle-7.6.1/lib/plugins/plexus-utils-3.3.0.jar
 wrapper/dists/gradle-7.6.1-bin/2clxi94ab3brv6467628wnxmd/gradle-7.6.1/lib/plugins/snakeyaml-1.32.jar
 wrapper/dists/gradle-7.6.1-bin/2clxi94ab3brv6467628wnxmd/gradle-7.6.1/lib/plugins/testng-6.3.1.jar
+caches/
+daemon/
