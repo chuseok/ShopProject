@@ -1,4 +1,4 @@
-# Spring Boot를 기반의 주문 API
+# Spring Boot를 기반의 Shop Project
 
 > Spring Boot, JPA를 사용하여 도메인 설계, 주문 API와 Test Code를 작성하고 Querydsl을 설정한 프로젝트
 
